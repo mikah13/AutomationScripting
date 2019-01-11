@@ -3,11 +3,11 @@ import time
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 from pynput.keyboard import Key, Controller
-import msg from message
-
+from message import msg
+from numbers import Number
 url = 'https://www.facebook.com/'
-username = ''
-password = ''
+username = 'anhminhhoang138@gmail.com'
+password = 'cunbong0812'
 
 chrome_options = Options()
 prefs = {"profile.default_content_setting_values.notifications": 2}
@@ -35,3 +35,17 @@ def send_message(id):
     keyboard = Controller()
     keyboard.press(Key.enter)
     time.sleep(.3)
+
+
+def unfriend(id):
+    driver.get('https://www.facebook.com/' + id)
+    time.sleep(.5)
+    friend_button = driver.find_element_by_class_name(
+        'FriendButton')
+    hover = ActionChains(driver).move_to_element(friend_button)
+    hover.perform()
+    time.sleep(.3)
+    unfriend_button = cf.driver.find_element_by_class_name(
+        'FriendListUnfriend')
+    unfriend_button.click()
+    time.sleep(2)
