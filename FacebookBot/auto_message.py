@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 import time
 from message import msg
@@ -9,7 +8,7 @@ from pynput.keyboard import Key, Controller
 url = 'https://www.facebook.com/'
 username = 'anhminhhoang138@gmail.com'
 password = 'cunbong0812'
-messenger = 'https://www.facebook.com/messages/t/blackjackhuy '
+messenger = 'https://www.facebook.com/messages/t/100012993585984'
 
 
 def run():
