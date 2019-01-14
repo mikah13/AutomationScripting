@@ -36,6 +36,7 @@ def run():
 
     for f in friend_arr:
         cf.send_message(f)
+        cf.unfriend(f)
 
 
 if __name__ == '__main__':

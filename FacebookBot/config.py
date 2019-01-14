@@ -7,7 +7,7 @@ from message import msg
 from numbers import Number
 url = 'https://www.facebook.com/'
 username = 'anhminhhoang138@gmail.com'
-password = 'cunbong0812'
+password = ''
 
 chrome_options = Options()
 prefs = {"profile.default_content_setting_values.notifications": 2}
